@@ -23,6 +23,7 @@ body {
   list-style: none;
   padding: 20px;
   background-color: #7272dd;
+  height: 30px;
 }
 
 .a-main {
@@ -34,11 +35,14 @@ body {
 }
 
 .ul-section {
-  display: none;
-  background: white;   /* fundo separado, não aumenta o roxo */
+  display: non;
+  background: #7272dd;
   list-style: none;
-  margin: 0;
-  padding: 10px 20px;
+  margin-top: 10px;
+  padding: 20px 25px;
+  border-radius: 0 0 80px 0;
+  position: relative;
+  left: 60px;
 }
 
 .ul-main > li:hover > .ul-section {
@@ -47,9 +51,17 @@ body {
 
 .a-section {
   display: block;
-  padding: 10px;
-  color: #333;
+  padding: 3px;
+  color: #ffffff;
   text-decoration: none;
+}
+
+.a-section:hover {
+  color: #000000;
+}
+
+#hulp-nodig{
+  margin-bottom: 4px;
 }
 
 
