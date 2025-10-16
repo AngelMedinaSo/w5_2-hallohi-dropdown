@@ -35,7 +35,8 @@ body {
 }
 
 .ul-section {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
   background: #7272dd;
   list-style: none;
   margin-top: 10px;
@@ -45,12 +46,14 @@ body {
   left: 60px;
 }
 
-.ul-main > li:hover > .ul-section {
-  display: block;
+.a-main.service-main:hover + .ul-section,
+.ul-section:hover {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .a-section {
-  display: block;
+  opacity: 1;
   padding: 3px;
   color: #ffffff;
   text-decoration: none;
@@ -60,11 +63,9 @@ body {
   color: #000000;
 }
 
-#hulp-nodig{
+#hulp-nodig {
   margin-bottom: 4px;
 }
-
-
 
 .header-section {
   background-color: black;
